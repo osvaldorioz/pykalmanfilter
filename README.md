@@ -28,6 +28,7 @@ El Filtro de Kalman se divide en dos pasos principales:
    - **Actualización del estado**: Ajusta la estimación del estado utilizando la observación.
    - **Actualización de la covarianza**: Ajusta la incertidumbre de la estimación del estado.
 
+![imagen](https://github.com/user-attachments/assets/b5242efb-ab31-4d72-91a3-8eb53af0ad18)
 
 
 ### Ventajas del Filtro de Kalman
