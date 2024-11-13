@@ -20,27 +20,14 @@ El Filtro de Kalman se divide en dos pasos principales:
    - **Predicción del estado**: Se estima el estado actual del sistema usando el estado anterior y el modelo de transición.
    - **Predicción de la covarianza**: Se actualiza la covarianza de la estimación para reflejar la incertidumbre esperada en el nuevo estado.
 
-   \[
-   x_{pred} = A \cdot x_{prev} + B \cdot u
-   \]
-   \[
-   P_{pred} = A \cdot P_{prev} \cdot A^T + Q
-   \]
+  
 
 2. **Actualización**:
    - **Cálculo de la ganancia de Kalman (\(K\))**: Determina cuánto peso se debe dar a la nueva observación en comparación con la predicción.
    - **Actualización del estado**: Ajusta la estimación del estado utilizando la observación.
    - **Actualización de la covarianza**: Ajusta la incertidumbre de la estimación del estado.
 
-   \[
-   K = P_{pred} \cdot H^T \cdot (H \cdot P_{pred} \cdot H^T + R)^{-1}
-   \]
-   \[
-   x_{upd} = x_{pred} + K \cdot (z - H \cdot x_{pred})
-   \]
-   \[
-   P_{upd} = (I - K \cdot H) \cdot P_{pred}
-   \]
+
 
 ### Ventajas del Filtro de Kalman
 
