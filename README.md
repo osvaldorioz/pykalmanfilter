@@ -20,7 +20,8 @@ El Filtro de Kalman se divide en dos pasos principales:
    - **Predicción del estado**: Se estima el estado actual del sistema usando el estado anterior y el modelo de transición.
    - **Predicción de la covarianza**: Se actualiza la covarianza de la estimación para reflejar la incertidumbre esperada en el nuevo estado.
 
-  
+  ![imagen](https://github.com/user-attachments/assets/291f529b-2458-4490-844c-d1e1c3b77db6)
+
 
 2. **Actualización**:
    - **Cálculo de la ganancia de Kalman (\(K\))**: Determina cuánto peso se debe dar a la nueva observación en comparación con la predicción.
